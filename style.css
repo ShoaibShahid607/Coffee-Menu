@@ -1,0 +1,164 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.body{
+  font-size: 20px;
+  overflow-x: hidden;
+  font-family:'Indie Flower' ;
+  color:rgb(255, 255, 255);
+  
+}
+header{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url('../images/cake.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.clearfix:after{
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
+}
+.row{
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.logo{
+  height: 250px;
+  width: auto;
+  float: left;
+  margin-top: 5px;
+}
+
+.main-nav{
+  float: right;
+  margin-top: 60px;
+}
+
+.main-nav li{
+  display: inline-block;
+  list-style:none;
+  margin-left: 40px;
+}
+
+.main-nav li a{
+  padding: 5px 0px;
+  color: #fff;
+  text-decoration: none;
+  text-transform:uppercase;
+  font-size: 90%;
+  font-weight: 100;
+}
+
+.main-nav li a:hover{
+  border-bottom: 2px solid #bf55ec;
+}
+
+.main-content-header{
+  width: 1180px;
+  position: absolute;
+  top: 30%;
+  
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+
+h1{
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight:lighter;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-transform:uppercase;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-1{
+  background-color: transparent;
+  color: #bf55ec;
+  margin-right: 15px;
+  border:1px solid #bf55ec;
+}
+
+.btn-1:hover{
+  background-color: #fff;
+}
+.btn-2{
+  background-color: transparent;
+  color: #fff;
+  margin-right: 15px;
+  border:1px solid #fff;
+}
+
+.btn-2:hover{
+  background-color: #bf55ec;
+}
+
+.colorspan{
+  animation: colorchangeshoaib 1s infinite ;
+}
+@keyframes colorchangeshoaib {
+  0%{color:rgb(20, 20, 20) }
+  25%{color: #bf55ec}
+  50%{color: #fff}
+  100%{color: #bf55ec}
+}
+
+.mobile-icon{
+  display: none;
+}
+/*Responsive Qurey*/
+@media only screen and (max-width:1180px) {
+  .main-content-header{
+    width: 100%;
+    padding: 0px 2%;
+  }
+}
+
+@media only screen and (max-width:998px) {
+  h1{font-size: 200%;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  h1{font-size: 180%;}
+    .main-nav{display: none;}
+    .mobile-icon{
+      display: inline-block;
+      color: #fff;
+      float:right;
+      margin-top: 30px;
+      margin-right: 20px;
+    }
+
+    .main-nav{float: left;}
+    .main-nav li{
+      display: block;
+      margin-top: 10px;
+    }
+@media  only screen and (max-width:480px){
+  .btn-1{
+    margin-bottom: 20px;
+  }
+  h1{font-size: 160%;}
+}
+}
